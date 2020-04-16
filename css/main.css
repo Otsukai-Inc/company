@@ -122,7 +122,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1.4rem;
   line-height: 1.286;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.16rem;
 }
 
@@ -547,7 +547,7 @@ input[type="button"] {
   right: 32px;
 }
 
-/* button thema
+/* button theme
  * ------------------------------------------------- */
  .btn-primary {
   color: #fff;
@@ -857,6 +857,10 @@ input[type="button"] {
 .select-lang {
   font-size: 1.3rem;
 }
+.select-lang a:hover {
+  color: #C7653C;
+  border-color: #C7653C;
+}
 .lang {
   display: inline-block;
   margin: 0 2px;
@@ -872,7 +876,6 @@ input[type="button"] {
   color: #fff;
   pointer-events: none;
 }
-
 
  /* drawer nav ----------- */
 #humberger {
@@ -1023,9 +1026,14 @@ padding-top: 40px;
   color: #fff;
   border-color: #fff;
  }
-  .l-footer .lang.is-selected {
+.l-footer .lang.is-selected {
   background: #fff;
   color: #222;
+}
+.l-footer a.lang:hover {
+  background: #222;
+  color: #fff;
+  border-color: #fff;
 }
 .footer-info {
   margin-top: 56px;
@@ -1163,6 +1171,9 @@ padding-top: 40px;
 }
 .l-product .top-content-ttl {
   background: url("../images/ttl_products.png") no-repeat center;
+}
+.l-services .top-content-ttl {
+  background: url("../images/ttl_services.png") no-repeat center;
 }
 .l-vision .top-content-ttl {
   background: url("../images/ttl_vision.png") no-repeat center;
@@ -1611,6 +1622,7 @@ padding-top: 40px;
 @media screen and (max-width:960px) {
   .l-massageContent-txt {
     width: 100%;
+    max-width: 500px;
   }
 }
 @media screen and (max-width:600px) {
@@ -1674,6 +1686,7 @@ padding-top: 40px;
  .l-products-inner {
   max-width: 1076px;
   margin: 0 auto;
+  overflow: hidden;
  }
 .l-products-pageLink-item {
   display: block;
